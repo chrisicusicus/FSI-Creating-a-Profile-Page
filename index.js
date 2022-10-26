@@ -9,6 +9,8 @@ content.append(header)
 let dogContent = document.createElement('div')
 dogContent.setAttribute('class', 'dog-content')
 content.append(dogContent)
+document.querySelector('p').textContent
+dogContent.textContent=document.querySelector('p').textContent
 
 let dogImage = document.createElement('img')
 dogImage.setAttribute('class', 'dog-image')
