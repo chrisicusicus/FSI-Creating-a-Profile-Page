@@ -21,4 +21,10 @@ let dogDetails = document.createElement('div')
 dogDetails.setAttribute('class', 'dog-details')
 content.append(dogDetails)
 
+const feedingTimeList = document.createElement('ul');
+dogDetails.append(feedingTimeList);
+const firstItem = document.createElement('li');
+firstItem.textcontent = '9:00 am';
+feedingTimeList.append(firstItem);
+
 
