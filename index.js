@@ -9,22 +9,25 @@ content.append(header)
 let dogContent = document.createElement('div')
 dogContent.setAttribute('class', 'dog-content')
 content.append(dogContent)
-document.querySelector('p').textContent
-dogContent.textContent=document.querySelector('p').textContent
+document.querySelector('div').textContent
+
 
 let dogImage = document.createElement('img')
 dogImage.setAttribute('class', 'dog-image')
 dogImage.setAttribute('src', './assets/rizzo.jpg')
 content.append(dogImage)
 
-let dogDetails = document.createElement('div')
+let descriptionHeader = document.createElement('h3')
+descriptionHeader.append('Description')
+descriptionHeader.setAttribute('class', 'dog-details')
+content.append(descriptionHeader)
+
+let dogDetails = document.createElement('p')
 dogDetails.setAttribute('class', 'dog-details')
 content.append(dogDetails)
+dogDetails.textContent=document.querySelector('p').textContent
 
-const feedingTimeList = document.createElement('ul');
-dogDetails.append(feedingTimeList);
-const firstItem = document.createElement('li');
-firstItem.textcontent = '9:00 am';
-feedingTimeList.append(firstItem);
-
-
+let timesHeader = document.createElement('h3')
+timesHeader.append('Feeding Times:')
+timesHeader.setAttribute('class', 'dog-details')
+content.append(timesHeader)
